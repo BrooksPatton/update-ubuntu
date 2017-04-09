@@ -4,7 +4,7 @@
 
 finished_correctly()
 {
-    if [ 0 -eq $? ]
+    if [ 0 -ne $? ]
     then
         echo "Error running $1"
         exit $2
